@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+:root{
+
+    /* ---------- FONT ---------- */
+    --font-family-hedvig: 'Hedvig Letters Serif', serif;
+    --font-family-sans: 'Open Sans', sans-serif;
+
+    /* ---------- COLORS ---------- */
+
+    --lime-50: #f7fee7;
+    --lime-100: #ecfccb;
+    --lime-200: #d9f99d;
+    --lime-300: #bef264;
+    --lime-400: #a3e635;
+    --lime-500: #84cc16;
+    --lime-600: #65a30d;
+    --lime-700: #4d7c0f;
+    --lime-800: #3f6212;
+    --lime-900: #365314; /*pincipal*/
+    --lime-950: #1a2e05;
+}
+
+body{
+    background-color: var(--lime-50);
+}
+main{
+    max-width: 575px;
+}
