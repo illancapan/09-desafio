@@ -23,11 +23,14 @@ body{
     background-color: var(--lime-100);
     color: #1a2e05;
 }
+.menu{
+    display: none;
+}
 
 .main {
     display: grid;
     background-color: #4d7c0f;
-    max-width: 575px;
+    min-width: 575px;
     grid-template-areas:"header"
                         "browser"
                         "section-main"
@@ -182,6 +185,26 @@ body{
 
 @media (min-width: 576px){
     .main{
+        width: 100%;
         background-color: var(--lime-900);
+        display: grid;
+        grid-template-areas:"header browser" 
+                            "... section-main"
+                            "footer section-paginacion";
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        margin: 100px 20px;
+    }
+    .nav-menu__img{
+        display: none;
+    }
+    .header {
+        display:flex;
+        flex-direction: column;
+    
+        height: 100px;
+        padding: 0 20px;
     }
 }
